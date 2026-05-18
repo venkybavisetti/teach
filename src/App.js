@@ -1,6 +1,7 @@
 import './App.css';
 import { useState } from 'react';
 import Counter from './components/Counter';
+import Measurement from './components/Measurement';
 
 function App() {
   const [inputText, setInputText] = useState('');
@@ -13,6 +14,7 @@ function App() {
     <div className="App">
       <input type="number" onChange={handleInputChange} value={inputText} />
       <Counter parent={inputText} />
+      <Measurement />
     </div>
   );
 }
